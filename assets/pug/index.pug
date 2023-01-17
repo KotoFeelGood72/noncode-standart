@@ -1,0 +1,75 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'HOME'}
+block content_block
+	section.calc 
+		.section_in
+			.calc_main 
+				.calc_quiz 
+						h1 Спланируйте электрическую систему для вашего нового дома.
+						.calc_subtitle Спланируйте свой строительный проект настолько разумно и энергоэффективно, насколько пожелаете. 
+						ul.calc_lists 
+							li.calc_item_w.defaul_item
+								.calc_item_title Уточните свой строительный проект более подробно.
+								ul.calc_type 
+									-for(i = 0; i < 4; i++)
+										- let typeImg = 'i/typeHome_' + i + '.jpg'
+										- let typeTitle = ['Дом на одну семью', 'Квартира', 'Многоквартирный дом', 'Бизнес']
+										if i === 0
+											li.calc_typeItem
+												input(type="radio" class="inputChecks" id=`typeHome${i}` name=`typeHome` data-price=`12${i}001` oninput="calcParams();" checked)
+												label(for=`typeHome${i}`)
+													.calc_typeItem__img 
+														img(src=typeImg, alt="")
+													p=typeTitle[i]
+										else 
+											li.calc_typeItem
+												input(type="radio" class="inputChecks" id=`typeHome${i}` name=`typeHome` data-price=`13${i}001` oninput="calcParams();")
+												label(for=`typeHome${i}`)
+													.calc_typeItem__img 
+														img(src=typeImg, alt="")
+													p=typeTitle[i]
+						ul.calc_optionList
+							-for(i = 0; i < 6; i++)
+								- let itemImg = 'i/check_' + i + '.jpg'
+								- let itemTitle = ['Определите свои предпочтения для освещения.', 'Определите потребности вашей сети и телевизионных установок.', 'Выберите предпочитаемые функции безопасности.', 'Решите, как производить и использовать электроэнергию.', 'Решите, какие из установок, которые у вас уже есть, должны быть электрически интегрированы.']
+								- let nameCheck = ['optionOne', 'optionTwo', 'optionFree', 'optionFour', 'optionFive', 'optionSix']
+								li.calc_item_w
+									.calc_item_title Определите свои предпочтения для освещения.
+									ul.calc_sublist
+										li.calc_sublist_item
+											.cart_itemDefault_img 
+												img(src="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" alt="" class="quiz_img")
+											.cart_itemCol_right
+												ul
+													li 
+														input(type="radio"  checked name="light"  class="inputChecks" id="light_1" data-price="100" data-img="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" oninput="calcParams();")
+														label(for="light_1") Традиционное освещение с потолочными
+													li 
+														input(type="radio" name="light"  class="inputChecks" id="light_2" data-price="200" data-img="https://smarthome.noocoon.de/assets/light_spot.ae80ff70.jpg" oninput="calcParams();")
+														label(for="light_2") Освещение в основном точечное
+													li 
+														input(type="radio" name="light"  class="inputChecks" id="light_3" data-price="300" data-img="https://smarthome.noocoon.de/assets/light_outlet-indirect.4d8d0078.jpg" oninput="calcParams();")
+														label(for="light_3") Традиционное освещение с потолочными и настенными светильниками
+													li 
+														input(type="radio" name="light"  class="inputChecks" id="light_4" data-price="400" data-img="https://smarthome.noocoon.de/assets/light_spot-indirect.798e161a.jpg" oninput="calcParams();")
+														label(for="light_4") Точечное освещение с потолочными и настенными светильниками
+				.calc_quiz_sidebar 
+					h3 Ваше предложение по установке
+					.accent_txt Электромонтаж и автоматизация зданий, в т.ч.
+					ul 
+						li Материал в соответствии с текущим производителем и ценами на сырье.
+						li Трудозатраты на монтажные работы.
+						li Программирование автопилота.
+						li Настройка управления энергопотреблением.
+					.calc_quiz_bottom 
+						.calc_total#total 32 117,90
+						ul 
+							li вкл. 19% НДС
+							li Отсутствие экономии на электроэнергии за счет
+							li собственной фотоэлектрической системы.
+						.order_btn.btn
+							button(type="submit" id="order_btn") Оформить заказ
+								
+

@@ -1,0 +1,311 @@
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=de0ee812-515f-4988-a580-639be65741a6&amp;lang=ru_RU"></script><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" media="all" href="styles/main_global.css"/>
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="section_in"> 
+        <div class="header_main"></div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <section class="calc"> 
+          <div class="section_in">
+            <div class="calc_main"> 
+              <div class="calc_quiz"> 
+                <h1>Спланируйте электрическую систему для вашего нового дома.</h1>
+                <div class="calc_subtitle">Спланируйте свой строительный проект настолько разумно и энергоэффективно, насколько пожелаете. </div>
+                <ul class="calc_lists"> 
+                  <li class="calc_item_w defaul_item">
+                    <div class="calc_item_title">Уточните свой строительный проект более подробно.</div>
+                    <ul class="calc_type"> 
+                      <li class="calc_typeItem">
+                        <input class="inputChecks" type="radio" id="typeHome0" name="typeHome" data-price="120001" oninput="calcParams();" checked>
+                        <label for="typeHome0">
+                          <div class="calc_typeItem__img"> <img src="i/typeHome_0.jpg" alt=""></div>
+                          <p>Дом на одну семью</p>
+                        </label>
+                      </li>
+                      <li class="calc_typeItem">
+                        <input class="inputChecks" type="radio" id="typeHome1" name="typeHome" data-price="131001" oninput="calcParams();">
+                        <label for="typeHome1">
+                          <div class="calc_typeItem__img"> <img src="i/typeHome_1.jpg" alt=""></div>
+                          <p>Квартира</p>
+                        </label>
+                      </li>
+                      <li class="calc_typeItem">
+                        <input class="inputChecks" type="radio" id="typeHome2" name="typeHome" data-price="132001" oninput="calcParams();">
+                        <label for="typeHome2">
+                          <div class="calc_typeItem__img"> <img src="i/typeHome_2.jpg" alt=""></div>
+                          <p>Многоквартирный дом</p>
+                        </label>
+                      </li>
+                      <li class="calc_typeItem">
+                        <input class="inputChecks" type="radio" id="typeHome3" name="typeHome" data-price="133001" oninput="calcParams();">
+                        <label for="typeHome3">
+                          <div class="calc_typeItem__img"> <img src="i/typeHome_3.jpg" alt=""></div>
+                          <p>Бизнес</p>
+                        </label>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="calc_optionList">
+                  <li class="calc_item_w">
+                    <div class="calc_item_title">Определите свои предпочтения для освещения.</div>
+                    <ul class="calc_sublist">
+                      <li class="calc_sublist_item">
+                        <div class="cart_itemDefault_img"> <img class="quiz_img" src="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" alt=""></div>
+                        <div class="cart_itemCol_right">
+                          <ul>
+                            <li> 
+                              <input class="inputChecks" type="radio" checked name="light" id="light_1" data-price="100" data-img="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" oninput="calcParams();">
+                              <label for="light_1">Традиционное освещение с потолочными</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_2" data-price="200" data-img="https://smarthome.noocoon.de/assets/light_spot.ae80ff70.jpg" oninput="calcParams();">
+                              <label for="light_2">Освещение в основном точечное</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_3" data-price="300" data-img="https://smarthome.noocoon.de/assets/light_outlet-indirect.4d8d0078.jpg" oninput="calcParams();">
+                              <label for="light_3">Традиционное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_4" data-price="400" data-img="https://smarthome.noocoon.de/assets/light_spot-indirect.798e161a.jpg" oninput="calcParams();">
+                              <label for="light_4">Точечное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="calc_item_w">
+                    <div class="calc_item_title">Определите свои предпочтения для освещения.</div>
+                    <ul class="calc_sublist">
+                      <li class="calc_sublist_item">
+                        <div class="cart_itemDefault_img"> <img class="quiz_img" src="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" alt=""></div>
+                        <div class="cart_itemCol_right">
+                          <ul>
+                            <li> 
+                              <input class="inputChecks" type="radio" checked name="light" id="light_1" data-price="100" data-img="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" oninput="calcParams();">
+                              <label for="light_1">Традиционное освещение с потолочными</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_2" data-price="200" data-img="https://smarthome.noocoon.de/assets/light_spot.ae80ff70.jpg" oninput="calcParams();">
+                              <label for="light_2">Освещение в основном точечное</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_3" data-price="300" data-img="https://smarthome.noocoon.de/assets/light_outlet-indirect.4d8d0078.jpg" oninput="calcParams();">
+                              <label for="light_3">Традиционное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_4" data-price="400" data-img="https://smarthome.noocoon.de/assets/light_spot-indirect.798e161a.jpg" oninput="calcParams();">
+                              <label for="light_4">Точечное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="calc_item_w">
+                    <div class="calc_item_title">Определите свои предпочтения для освещения.</div>
+                    <ul class="calc_sublist">
+                      <li class="calc_sublist_item">
+                        <div class="cart_itemDefault_img"> <img class="quiz_img" src="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" alt=""></div>
+                        <div class="cart_itemCol_right">
+                          <ul>
+                            <li> 
+                              <input class="inputChecks" type="radio" checked name="light" id="light_1" data-price="100" data-img="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" oninput="calcParams();">
+                              <label for="light_1">Традиционное освещение с потолочными</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_2" data-price="200" data-img="https://smarthome.noocoon.de/assets/light_spot.ae80ff70.jpg" oninput="calcParams();">
+                              <label for="light_2">Освещение в основном точечное</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_3" data-price="300" data-img="https://smarthome.noocoon.de/assets/light_outlet-indirect.4d8d0078.jpg" oninput="calcParams();">
+                              <label for="light_3">Традиционное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_4" data-price="400" data-img="https://smarthome.noocoon.de/assets/light_spot-indirect.798e161a.jpg" oninput="calcParams();">
+                              <label for="light_4">Точечное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="calc_item_w">
+                    <div class="calc_item_title">Определите свои предпочтения для освещения.</div>
+                    <ul class="calc_sublist">
+                      <li class="calc_sublist_item">
+                        <div class="cart_itemDefault_img"> <img class="quiz_img" src="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" alt=""></div>
+                        <div class="cart_itemCol_right">
+                          <ul>
+                            <li> 
+                              <input class="inputChecks" type="radio" checked name="light" id="light_1" data-price="100" data-img="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" oninput="calcParams();">
+                              <label for="light_1">Традиционное освещение с потолочными</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_2" data-price="200" data-img="https://smarthome.noocoon.de/assets/light_spot.ae80ff70.jpg" oninput="calcParams();">
+                              <label for="light_2">Освещение в основном точечное</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_3" data-price="300" data-img="https://smarthome.noocoon.de/assets/light_outlet-indirect.4d8d0078.jpg" oninput="calcParams();">
+                              <label for="light_3">Традиционное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_4" data-price="400" data-img="https://smarthome.noocoon.de/assets/light_spot-indirect.798e161a.jpg" oninput="calcParams();">
+                              <label for="light_4">Точечное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="calc_item_w">
+                    <div class="calc_item_title">Определите свои предпочтения для освещения.</div>
+                    <ul class="calc_sublist">
+                      <li class="calc_sublist_item">
+                        <div class="cart_itemDefault_img"> <img class="quiz_img" src="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" alt=""></div>
+                        <div class="cart_itemCol_right">
+                          <ul>
+                            <li> 
+                              <input class="inputChecks" type="radio" checked name="light" id="light_1" data-price="100" data-img="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" oninput="calcParams();">
+                              <label for="light_1">Традиционное освещение с потолочными</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_2" data-price="200" data-img="https://smarthome.noocoon.de/assets/light_spot.ae80ff70.jpg" oninput="calcParams();">
+                              <label for="light_2">Освещение в основном точечное</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_3" data-price="300" data-img="https://smarthome.noocoon.de/assets/light_outlet-indirect.4d8d0078.jpg" oninput="calcParams();">
+                              <label for="light_3">Традиционное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_4" data-price="400" data-img="https://smarthome.noocoon.de/assets/light_spot-indirect.798e161a.jpg" oninput="calcParams();">
+                              <label for="light_4">Точечное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="calc_item_w">
+                    <div class="calc_item_title">Определите свои предпочтения для освещения.</div>
+                    <ul class="calc_sublist">
+                      <li class="calc_sublist_item">
+                        <div class="cart_itemDefault_img"> <img class="quiz_img" src="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" alt=""></div>
+                        <div class="cart_itemCol_right">
+                          <ul>
+                            <li> 
+                              <input class="inputChecks" type="radio" checked name="light" id="light_1" data-price="100" data-img="https://smarthome.noocoon.de/assets/light_outlet.5dd3c753.jpg" oninput="calcParams();">
+                              <label for="light_1">Традиционное освещение с потолочными</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_2" data-price="200" data-img="https://smarthome.noocoon.de/assets/light_spot.ae80ff70.jpg" oninput="calcParams();">
+                              <label for="light_2">Освещение в основном точечное</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_3" data-price="300" data-img="https://smarthome.noocoon.de/assets/light_outlet-indirect.4d8d0078.jpg" oninput="calcParams();">
+                              <label for="light_3">Традиционное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                            <li> 
+                              <input class="inputChecks" type="radio" name="light" id="light_4" data-price="400" data-img="https://smarthome.noocoon.de/assets/light_spot-indirect.798e161a.jpg" oninput="calcParams();">
+                              <label for="light_4">Точечное освещение с потолочными и настенными светильниками</label>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="calc_quiz_sidebar"> 
+                <h3>Ваше предложение по установке</h3>
+                <div class="accent_txt">Электромонтаж и автоматизация зданий, в т.ч.</div>
+                <ul> 
+                  <li>Материал в соответствии с текущим производителем и ценами на сырье.</li>
+                  <li>Трудозатраты на монтажные работы.</li>
+                  <li>Программирование автопилота.</li>
+                  <li>Настройка управления энергопотреблением.</li>
+                </ul>
+                <div class="calc_quiz_bottom"> 
+                  <div class="calc_total" id="total">32 117,90</div>
+                  <ul> 
+                    <li>вкл. 19% НДС</li>
+                    <li>Отсутствие экономии на электроэнергии за счет</li>
+                    <li>собственной фотоэлектрической системы.</li>
+                  </ul>
+                  <div class="order_btn btn">
+                    <button type="submit" id="order_btn">Оформить заказ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer"> 
+        <div class="section_in"> 
+          <div class="footer_main"> </div>
+        </div>
+      </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script>window.TweenMax || document.write('<script src="js/gsap.min.js"><\/script>')</script>
+    <script type="text/javascript">window.productionStatus = 'development';</script>
+    <script src="js/libs.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+    <div class="popup_order"> 
+      <div class="popup_order_bg remove_popup"> </div>
+      <div class="popup_order_main">
+        <div class="popup_close remove_popup"><img src="i/close.svg" alt=""></div>
+        <h3>Оставить заявку</h3>
+        <form class="popup_order_form">
+          <div class="popup_order_input">
+            <label for="your_name">Ваше имя</label>
+            <input type="text" id="your_name">
+          </div>
+          <div class="popup_order_input">
+            <label for="your_phone">Ваш телефон</label>
+            <input type="tel" id="your_phone">
+          </div>
+          <div class="popup_order_input">
+            <label for="your_email">Ваш E-Mail</label>
+            <input type="email" id="your_email">
+          </div>
+          <div class="popup_order_btn"> 
+            <input type="submit" value="Оформить">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="succes">
+      <div class="succes_main"> 
+        <p>Ваше сообщение успешно отправлено!</p>
+        <div class="succes_icon">
+           <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></div>
+      </div>
+    </div>
+    <div class="failed">
+      <div class="failed_main"> 
+        <p>Проверьте правильность полей!</p>
+        <div class="failed_icon">
+           <svg class="checkmark_close" class="test-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="3" stroke-dasharray="100"><circle class="close__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon-path" id="check" d="M 15,15 L 32,33 M 32,15 L 15,33"></path></svg></div>
+      </div>
+    </div>
+  </body>
+</html>

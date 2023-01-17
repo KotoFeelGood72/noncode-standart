@@ -1,0 +1,18 @@
+.popup_order 
+	.popup_order_bg.remove_popup 
+	.popup_order_main
+		.popup_close.remove_popup
+			img(src="i/close.svg", alt="")
+		h3 Оставить заявку
+		form.popup_order_form
+			.popup_order_input
+				label(for="your_name") Ваше имя
+				input(type="text" id="your_name")
+			.popup_order_input
+				label(for="your_phone") Ваш телефон
+				input(type="tel" id="your_phone")
+			.popup_order_input
+				label(for="your_email") Ваш E-Mail
+				input(type="email" id="your_email")
+			.popup_order_btn 
+				input(type="submit", value="Оформить")
